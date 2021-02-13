@@ -11,4 +11,4 @@ require('./config/mongoose')(app);
 
 app.use(routes);
 
-app.listen(PORT, () => console.log.bind(console, `Serer is listening on port... ${PORT}!`))
+app.listen(PORT, () => console.log()`Serer is listening on port... ${PORT}!`)
