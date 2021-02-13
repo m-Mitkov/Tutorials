@@ -14,8 +14,10 @@
     "bcrypt": "^5.0.0",
     "body": "^5.1.0",
     "cookie": "^0.4.1",
+    "cookie-parser": "^1.4.5",
     "express": "^4.17.1",
     "express-handlebars": "^5.2.0",
+    "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.11.16",
     "parser": "^0.1.4"
   },

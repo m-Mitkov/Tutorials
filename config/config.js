@@ -1,6 +1,6 @@
 const config = {
     development: {
-        PORT: 8080,
+        PORT: 7070,
         DB_CONECTION: 'mongodb://localhost/cubicle',
         SALT_ROUNDS: 7,
         SECRET: 'the secret secret',
