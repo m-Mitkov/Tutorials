@@ -11,7 +11,7 @@ const courseSchema = new mongoose.Schema({
     description: {
      type: String,
      required: true,
-     maxLength: 50 
+     maxLength: 150 
     },
 
     imageUrl: {
@@ -24,13 +24,18 @@ const courseSchema = new mongoose.Schema({
         required: true
     },
 
-    'created at': {
+    createdAt: {
         type: String || Date,
         required: true
     },
 
+    creator: {
+        type: mongoose.Types.ObjectId,
+        ref: 'User'
+    },
+
     users: [{
-        _id: mongoose.Types.ObjectId,
+        type: mongoose.Types.ObjectId,
         ref: 'User'
     }]
 

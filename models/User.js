@@ -13,8 +13,13 @@ const userSchema = new mongoose.Schema({
         required: true
     },
 
+    createdCourses: [{
+        type: mongoose.Types.ObjectId,
+        ref: 'Course'
+    }],
+
     courses: [{
-        _id: mongoose.Types.ObjectId,
+        type: mongoose.Types.ObjectId,
         ref: 'Course'
     }]
 });

@@ -9,6 +9,6 @@ module.exports = (app) => {
 
         const db = mongoose.connection;
 
-        db.on(open, () => console.log('DB successfully conected!'))
-        db.on(error, () => console.log('Mongo could not connect'));
+        db.on('open', () => console.log('DB successfully conected!'));
+        // db.on('error', () => console.log('Mongo could not connect'));
 };
