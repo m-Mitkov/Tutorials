@@ -1,9 +1,9 @@
 const config = {
     development: {
-        PORT: 7070,
-        DB_CONECTION: 'mongodb://localhost/tutorials',
+        PORT: 7070, 
+        DB_CONECTION: 'mongodb://localhost/*use your own DB*',
         SALT_ROUNDS: 7,
-        SECRET: 'the secret secret',
+        SECRET: '*write a 'secret' string for jwt validation*',
         COOKIE_NAME: 'USER_SESSION',
     },
 
